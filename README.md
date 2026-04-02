@@ -141,6 +141,33 @@ This data survives power off!
 ## 5)검증 증거
 GitHub Repository: https://github.com/ldryong1008-coder/ai-codyssey.git
 
+% git config --global user.name "ldryong1008-coder 
+dquote> git config --global user.email "ldryong1009@gmail.com"
+dquote> git config --global init.defaultBranch main
+dquote> 
+ldryong10097422@c4r7s8 orbstack-project % git config --global user.name "ldryong1008-coder"
+ldryong10097422@c4r7s8 orbstack-project % git config --global user.email "ldryong1009@gmail.com"
+ldryong10097422@c4r7s8 orbstack-project % git config --global init.defaultBranch main
+ldryong10097422@c4r7s8 orbstack-project % git config --list
+credential.helper=osxkeychain
+user.name=ldryong1008-coder
+user.email=ldryong1009@gmail.com
+init.defaultbranch=main
+ldryong10097422@c4r7s8 orbstack-project % git init
+Initialized empty Git repository in /Users/ldryong10097422/orbstack-project/.git/
+ldryong10097422@c4r7s8 orbstack-project % git add .
+ldryong10097422@c4r7s8 orbstack-project % git commit -m "Complete Docker & OrbStack Assignment"
+[main (root-commit) 78e1bc5] Complete Docker & OrbStack Assignment
+
+% git push -u origin main
+Username for 'https://github.com': ldryong1008-coder
+Password for 'https://ldryong1008-coder@github.com': 
+
+ 3 files changed, 4 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 app/index.html
+ create mode 100644 test.txt
+
 기술 문서: README.md (본 문서)
 
 포트 매핑 확인: http://localhost:8080 <img width="2624" height="2192" alt="image" src="https://github.com/user-attachments/assets/a584f651-a0f4-4736-b8fb-694f93ddbf26" />
