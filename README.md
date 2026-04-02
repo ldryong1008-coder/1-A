@@ -84,6 +84,12 @@ CONTAINER ID   IMAGE          STATUS                     PORTS                  
 
 3.Dockerfile 커스텀 및 빌드
 
+% cat <<EOF > Dockerfile
+FROM nginx:alpine
+COPY ./app/index.html /usr/share/nginx/html/index.html
+EOF
+
+
 FROM nginx:alpine
 COPY ./app/index.html /usr/share/nginx/html/index.html
 
