@@ -4,7 +4,7 @@
 핵심 학습: 터미널 명령어, 파일 권한(chmod), Dockerfile 빌드, 포트 매핑, 볼륨 관리, Git/GitHub 연동.
 
 
-
+---
 ## 1) 실행 환경
 OS: macOS (Apple Silicon/Intel)
 
@@ -16,7 +16,7 @@ Docker Version: 28.5.2
 
 Git Version: 2.53.0
 
-
+---
 ## 2) 수행 항목 체크리스트
 
 [0] 터미널 기본 조작 및 폴더 구성
@@ -37,23 +37,35 @@ Git Version: 2.53.0
 
 [0] Git 설정 + GitHub 강제 연동 완료
 
-
+---
 ## 3) 수행로그(발췌)
-'''bash
 
 1.터미널 조작 및 권한 변경
 
 % pwd
+
+
 /Users/ldryong10097422
+
+
 % mkdir -p ~/orbstack-project && cd ~/orbstack-project
+
+
 % touch test.txt && echo "hello OrbStack" > test.txt
-'''
+
 
 % ls -l test.txt
+
+
 -rw-r--r--  1 ldryong10097422  ldryong10097422  15 Apr  2 18:03 test.txt
 
+
 % chmod 644 test.txt
+
+
 % ls -l test.txt
+
+
 -rw-r--r--  1 ldryong10097422  ldryong10097422  15 Apr  2 18:03 test.txt
 
 
