@@ -39,7 +39,7 @@ Git Version: 2.53.0
 
 
 ## 3) 수행로그(발췌)
-
+'''bash
 
 1.터미널 조작 및 권한 변경
 
@@ -47,6 +47,7 @@ Git Version: 2.53.0
 /Users/ldryong10097422
 % mkdir -p ~/orbstack-project && cd ~/orbstack-project
 % touch test.txt && echo "hello OrbStack" > test.txt
+'''
 
 % ls -l test.txt
 -rw-r--r--  1 ldryong10097422  ldryong10097422  15 Apr  2 18:03 test.txt
