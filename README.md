@@ -62,6 +62,9 @@ Git Version: 2.53.0
 % docker --version
 Docker version 28.5.2, build ecc6942
 
+% docker run hello-world
+Hello from Docker!
+
 % docker ps -a
 CONTAINER ID   IMAGE          STATUS                     PORTS                    NAMES
 20218c16fe90   nginx:alpine   Up 2 minutes               0.0.0.0:8081->80/tcp     mount-test
@@ -82,11 +85,13 @@ COPY ./app/index.html /usr/share/nginx/html/index.html
 
 
 4.볼륨 영속성 검증
+
+% docker run -d -p 8081:80 --name mount-test -v $(pwd)/app:/usr/share/nginx/html nginx:alpine
+
 % docker volume create my-data-vol
 % docker run -d --name vol-tester -v my-data-vol:/app/data alpine sleep infinity
 % docker exec vol-tester sh -c "echo 'This data survives power off!' > /app/data/hello.txt"
 % docker rm -f vol-tester
-
 % docker run -d --name vol-tester-new -v my-data-vol:/app/data alpine sleep infinity
 % docker exec vol-tester-new cat /app/data/hello.txt
 This data survives power off!
