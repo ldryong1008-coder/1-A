@@ -22,7 +22,7 @@
 - [x] 포트 매핑 (외부 접속 확인)
 - [x] 마운트 및 볼륨 영속성 검증
 - [x] Git 로컬 환경 설정 및 커밋
-- [ ] GitHub 연동, 스크린샷 증거자료 추가 (사용자 직접 수행 필요)
+- [x] GitHub 연동, 스크린샷 증거자료 추가 (사용자 직접 수행 필요)
 
 ## 4. 수행 기록 및 검증 방식
 
@@ -124,7 +124,8 @@ $ curl http://localhost:8080
 <html>...<h1>Hello from NGINX on Docker!</h1>...</html>
 ```
 ### 웹 브라우저 접속 인증
-![웹 브라우저 접속 인증](./screenshot.png)
+<img width="663" height="198" alt="Screenshot " src="https://github.com/user-attachments/assets/98bd6596-1754-4b45-aa64-dd476d9271a9" />
+
 
 ---
 
