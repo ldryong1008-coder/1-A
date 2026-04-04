@@ -145,3 +145,21 @@ hint:
 hint: Disable this message with "git config set advice.defaultBranchName false"
 Initialized empty Git repository in /Users/ldryong10097422/dev-workstation/.git/
 $ git add .
+$ git config user.name 'Your Name' && git config user.email 'your.email@example.com'
+$ git commit -m 'Initial commit'
+[master (root-commit) 26483c9] Initial commit
+ 8 files changed, 338 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 docker.log
+ create mode 100644 docker_run.sh
+ create mode 100644 mission.log
+ create mode 100755 practice/dir1/renamed.txt
+ create mode 100644 practice/new_index.html
+ create mode 100644 run.sh
+ create mode 100644 src/index.html
+$ git log -1
+commit 26483c9ff96770e4de24257407fdd5ba692a0028
+Author: Your Name <your.email@example.com>
+Date:   Sat Apr 4 19:17:07 2026 +0900
+
+    Initial commit
