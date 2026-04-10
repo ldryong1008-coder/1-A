@@ -164,6 +164,8 @@ Bind Mount After
 
 1. 볼륨 데이터 접속 및 수정 (8080 컨테이너 도중 데이터 덮어쓰기)
 ```bash
+$ docker volume create mysite_data
+mysite_data
 $ docker cp practice/new_index.html my-web-8080:/usr/share/nginx/html/index.html
 $ curl http://localhost:8080
 Updated by Volume Mount
